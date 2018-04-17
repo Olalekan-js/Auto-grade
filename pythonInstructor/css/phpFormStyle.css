@@ -1,0 +1,99 @@
+html {
+	background-color: #00caec;
+	//background: url(../img/oaulogo.png) top right/ 80px 80px repeat;
+	
+
+}
+
+body {
+	width: 55%;
+	background-color:#00caec;
+	//background: url(../img/oaulogo.png) top right repeat;
+	margin: 0 auto;
+	font-size: 17px;
+	//outline: 1px solid teal;
+}
+
+form {
+	background-color: #fff;
+	width: 100%;
+	border: 1px solid teal;
+	border-radius: 10px;
+	font-family: "Helvetic Neue", Helvetica, Arial, sans-serif;
+	margin: 25% 0;
+}
+
+fieldset {
+	padding: 0;
+	border: none;
+	//text-align: center;
+}
+
+legend {
+	font-size: 1.3em;
+	color: #00caec;
+	display: block;
+	text-align: center;
+	margin-bottom: 25px;
+	padding-top: 10px;
+	text-shadow: 0 0 1px #000;
+	//text-transform: uppercase;
+}
+
+input, label, select {
+	font-family: inherit;
+	padding: 8px 5px;
+}
+
+label {
+	color: #000;
+	font-weight: bold;
+	float: left;
+	width: 11em;
+	text-align: right;
+	vertical-align: top;
+	margin-right: 30px;
+	//outline: 1px solid teal;
+}
+
+input, select {
+	width: 200px;
+	margin-bottom: 15px;
+	border: none;
+}
+
+select,
+input[type ="text"],
+input[type ="password"] {
+	background-color: rgba(240,240,240,0.1);
+	border-radius: 5px;
+	box-shadow: inset 0 0 1px rgb(102,102,102);
+	//padding: 5px 5px;
+}
+
+input[type ="password"] {
+	font-size: inherit;
+	font-weight: bolder;
+}
+
+input[type ="submit"] {
+	display: block;
+	width: 7em;
+	background-color: rgba(0,0,0,0.7);
+	font-size: inherit;
+	color: #fff;
+	box-shadow: inset 0 0 2px rgb(250,250,250);
+	border-radius: 5px;
+	margin: 20px auto 10px;;
+	transition: font-weight .4s linear;
+}
+
+input[type ="text"]:focus,
+input[type ="password"]:focus {
+	background-color: #fff;
+}
+
+input[type ="submit"]:hover {
+	cursor: pointer;
+	font-weight: bold;
+}

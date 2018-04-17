@@ -1,0 +1,13 @@
+.sidebar ul#subCourse {
+	list-style-type: none;
+	margin: 0;
+}
+
+.sidebar ul#manageStudent  {
+	list-style: none;
+	margin: 0;
+}
+
+.collapse {
+	list-style: none;
+}

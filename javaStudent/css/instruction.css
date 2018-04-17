@@ -1,0 +1,47 @@
+html {
+	font-size: 62.5%;
+	font-family: "Helvetica Neue", helvetica, Arial, sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	font-size: 10rem;
+	font-weight: 300;
+	margin-bottom: 4rem;
+}
+
+ul {
+	font-size: 2rem;
+	padding-left: 3rem;
+	text-align: justify;
+	margin-bottom: 5rem;
+}
+
+li {
+	margin-bottom: 2rem;
+}
+
+a:link {
+	display: inline-block;
+	padding: 10px 20px;
+	font-size: 2rem;
+	color: black;
+	text-decoration: none;
+	text-transform: uppercase;
+	border: 1px solid black;
+	border-radius: 100px;
+}
+
+p {
+	text-align: center;
+}
+
+p a:hover {
+	background-color: #333;
+	color: lightgreen;
+}
