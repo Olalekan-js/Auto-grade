@@ -1,6 +1,5 @@
 html {
 	background-color: #00caec;
-	//background: url(../img/oaulogo.png) top right/ 80px 80px repeat;
 	
 
 }
@@ -8,10 +7,8 @@ html {
 body {
 	width: 55%;
 	background-color:#00caec;
-	//background: url(../img/oaulogo.png) top right repeat;
 	margin: 0 auto;
 	font-size: 17px;
-	//outline: 1px solid teal;
 }
 
 form {
