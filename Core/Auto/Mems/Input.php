@@ -5,6 +5,7 @@
  * Date: 04/11/18
  * Time: 8:40 AM
  */
+namespace App\Auto\Mems;
 class Input{
     public static function exists($type= 'post'){
         switch ($type){

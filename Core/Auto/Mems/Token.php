@@ -5,9 +5,9 @@
  * Date: 04/11/18
  * Time: 8:54 AM
  */
+namespace App\Auto\Mems;
+use App\Auto\Mems\Session;
 
-use  Edu\Handler\Session;
-use Edu\Config\Config;
 class Token{
     public static function generate(){
         return Session::put(Config::get('sessions/token_name'),md5(uniqid()));

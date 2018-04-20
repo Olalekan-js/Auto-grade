@@ -5,7 +5,7 @@
  * Date: 04/11/18
  * Time: 8:49 AM
  */
-
+namespace App\Auto\Mems;
 class Session{
     public static function exists($name){
         return (isset($_SESSION[$name])) ? true : false;

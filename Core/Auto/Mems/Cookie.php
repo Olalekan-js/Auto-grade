@@ -5,7 +5,7 @@
  * Date: 04/11/18
  * Time: 7:48 AM
  */
-
+namespace App\Auto\Mems;
 class Cookie{
     public static function exists($name){
         return (isset($_COOKIE[$name])) ? true : false;

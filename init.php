@@ -6,7 +6,7 @@
  * Time: 6:40 AM
  */
 
-
+session_start();
 use Illuminate\Database\Capsule\Manager as Capsule;
 
 use Illuminate\Container\Container;
