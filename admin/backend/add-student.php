@@ -28,7 +28,7 @@ if ($validator->passed()){
         Redirect::to('../dashboard.php');
 
     }else{
-        echo 'coud save student ';
+        echo 'couldn\'t save student ';
     }
 }else{
     Redirect::to('../add-student.php');

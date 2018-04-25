@@ -8,7 +8,7 @@
 namespace App\Auto;
 use Illuminate\Database\Eloquent\Model;
 class Admin extends Model{
-
+    protected $table = 'admin';
     protected $hidden = ['created_at','password'];
 
     public function course(){

@@ -60,7 +60,13 @@ if (Input::exists('post')){
     <fieldset>
 
         <legend>Administrator Page</legend>
-
+        <?php
+        if (isset($_error)){
+            foreach ($_error as $item){
+                echo '<div >'.$item.'</div>';
+            }
+        }
+        ?>
         <label for ="name">Instructor ID</label>
         <input type ="text" name ="instructor_id"  id ="name" autofocus required><br>
 
