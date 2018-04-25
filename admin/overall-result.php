@@ -265,7 +265,7 @@
             $('#table-body')
                 .append(
                     "<tr><td>"+ element.id+ "</td><td>"+element.name+ "</td><td>"
-                    +element.matric_number +"</td><td><a role='button' class='btn btn-success btn-wd'>View Result</a></td> </tr>"
+                    +element.matric_number +"</td><td>"element.results.semester +"</td><td><a role='button' class='btn btn-success btn-wd'>View Result</a></td> </tr>"
                 );
         }
     }

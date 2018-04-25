@@ -3,9 +3,11 @@ include '../../vendor/autoload.php';
 include "../../init.php";
 use App\Auto\Mems\Session;
 use App\Auto\Mems\Redirect;
+use App\Auto\Question;
 if (!Session::exists('login')){
     Redirect::to('../../student/student.php');
 }
+$questions = Question::where('course','java')->get();
 ?>
 <html>
 <head>
@@ -160,7 +162,7 @@ xmlhttp.onreadystatechange=function()
     </div>
 
     <article>
-      <div id ="flip1"><button id = 'flip' name ="flip">show/hide question</button></div>
+      <div id ="flip1"><button id='flip' name ="flip">show/hide question</button></div>
 
       <p class ="but3">
         <button class ="showTime"><time datetime ="">HH:MM</time></button>

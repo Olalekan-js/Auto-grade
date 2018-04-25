@@ -161,7 +161,7 @@
                                 <h4 class="title">Upload Instruction</h4>
                             </div>
                             <div class="content">
-                                <form action ="" method ="post">
+                                <form action ="backend/instructorUpload-backend.php" method ="post">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">

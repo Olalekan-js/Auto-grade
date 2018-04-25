@@ -147,12 +147,12 @@
                                 <h4 class="title">Instructor detail</h4>
                             </div>
                             <div class="content">
-                                <form>
+                                <form action="backend/add-instructor-backend.php" method="post">
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Instructor ID</label>
-                                                <input style="font-weight: 600; color: #000; background-color: #fff" type="text" class="form-control border-input" disabled placeholder="INS-2012" value="INS-2012">
+                                                <input style="font-weight: 600; color: #000; background-color: #fff" type="text" name="instructor_id" class="form-control border-input" placeholder="INS-2012" value="INS-2012">
                                             </div>
                                         </div>
                                     </div>
@@ -160,13 +160,21 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Instructor Name</label>
-                                                <input type="text" class="form-control border-input" placeholder="Emmanuel Adio">
+                                                <input type="text" name="name" class="form-control border-input" placeholder="Emmanuel Adio">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <label>Instructor Password</label>
+                                                <input type="text" name="password" class="form-control border-input" placeholder="password">
                                             </div>
                                         </div>
                                     </div>
 
                                     <div class="text-left">
-                                        <button type="submit" class="btn btn-info btn-fill btn-wd">Add Instructor</button>
+                                        <input type="submit" class="btn btn-info btn-fill btn-wd" name="submit" value="Add Instructor">
                                     </div>
                                     <div class="clearfix"></div>
                                 </form>

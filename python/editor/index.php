@@ -3,9 +3,11 @@ include '../../vendor/autoload.php';
 include "../../init.php";
 use App\Auto\Mems\Session;
 use App\Auto\Mems\Redirect;
+use App\Auto\Question;
 if (!Session::exists('login')){
     Redirect::to('../../student/student.php');
 }
+$questions = Question::where('course', 'python')->get();
 ?>
 <html>
 <head>

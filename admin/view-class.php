@@ -137,30 +137,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Search Department</label>
-                                                <select type="text" class="form-control border-input">
-                                                    <option>--Select Department--</option>
-                                                    <option>Agricultural Engineering</option>
-                                                    <option>Architecture</option>
-                                                    <option>Chemical Engineering</option>
-                                                    <option>Computer Science and Engineering</option>
-                                                    <option>Electrical and Electronics Engineering</option>
-                                                    <option>Mechanical Engineering</option>
-                                                    <option>Material Science and Engineering</option>
-                                                    <option>Civil Engineering</option>
-                                                    <option>Food Science and Engineering</option>
-                                                    <option>Mathematics</option>
-                                                    <option>Chemistry</option>
-                                                    <option>Biochemistry</option>
-                                                    <option>Microbiology</option>
-                                                    <option>Education</option>
-                                                    <option>Botany</option>
-                                                    <option>Geology</option>
-                                                    <option>Building</option>
-                                                    <option>Physics</option>
-                                                    <option>Estate Management</option>
-                                                    <option>Quantity Survey</option>
-                                                    <option>Zoology</option>
-                                                </select>
+                                                <input type="text" id="view" name="department"   class="form-control border-input" placeholder="Search">
                                             </div>
                                         </div>
                                     </div>

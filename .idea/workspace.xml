@@ -2,74 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d454c31-72e9-4f2c-ba18-fc1c3a9c88e6" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/add-instructor.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/add-student.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/all-instructors.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/css/animate.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/css/demo.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/css/paper-dashboard.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/css/themify-icons.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/fonts/themify.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/fonts/themify.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/fonts/themify.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/fonts/themify.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/img/apple-icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/img/background.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/img/faces/face-0.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/img/faces/face-1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/img/faces/face-2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/img/faces/face-3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/img/favicon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/img/new_logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/img/tim_80x80.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/js/bootstrap-checkbox-radio.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/js/bootstrap-notify.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/js/chartist.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/js/demo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/js/jquery-1.10.2.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/js/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/js/paper-dashboard.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper-dashboard.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_alerts.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_buttons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_cards.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_chartist.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_checkbox-radio.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_dropdown.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_footers.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_inputs.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_misc.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_mixins.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_navbars.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_responsive.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_sidebar-and-main-panel.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_tables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_typography.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/_variables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_buttons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_cards.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_chartist.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_icons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_inputs.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_labels.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_navbars.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_sidebar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_tabs.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_transparency.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/assets/sass/paper/mixins/_vendor-prefixes.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/csc201.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/csc202.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/css/phpFormStyle.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/dashboard.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/instructionUpload.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/overall-result.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/admin/view-class.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/Core/Auto/Admin.php" afterPath="$PROJECT_DIR$/Core/Auto/Admin.php" />
-      <change beforePath="$PROJECT_DIR$/admin/index.php" afterPath="$PROJECT_DIR$/admin/index.php" />
-      <change beforePath="$PROJECT_DIR$/admin/login.php" afterPath="$PROJECT_DIR$/admin/login.php" />
+      <change beforePath="$PROJECT_DIR$/admin/add-instructor.php" afterPath="$PROJECT_DIR$/admin/add-instructor.php" />
+      <change beforePath="$PROJECT_DIR$/admin/backend/add-instructor-backend.php" afterPath="$PROJECT_DIR$/admin/backend/add-instructor-backend.php" />
+      <change beforePath="$PROJECT_DIR$/admin/backend/instructorUpload-backend.php" afterPath="$PROJECT_DIR$/admin/backend/instructorUpload-backend.php" />
+      <change beforePath="$PROJECT_DIR$/admin/instructionUpload.php" afterPath="$PROJECT_DIR$/admin/instructionUpload.php" />
+      <change beforePath="$PROJECT_DIR$/admin/overall-result.php" afterPath="$PROJECT_DIR$/admin/overall-result.php" />
+      <change beforePath="$PROJECT_DIR$/admin/view-class.php" afterPath="$PROJECT_DIR$/admin/view-class.php" />
+      <change beforePath="$PROJECT_DIR$/java/editor/index.php" afterPath="$PROJECT_DIR$/java/editor/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -89,71 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view-class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/view-class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csc201.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javaAdmin/csc201.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3857">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csc202.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javaAdmin/csc202.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4336">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="csc201.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/csc201.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="add-instructor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/add-instructor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="all-instructors.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin/all-instructors.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="46">
+              <caret line="154" column="184" lean-forward="false" selection-start-line="154" selection-start-column="184" selection-end-line="154" selection-end-column="184" />
               <folding />
             </state>
           </provider>
@@ -161,6 +42,26 @@
       </file>
       <file leaf-file-name="instructionUpload.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/instructionUpload.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="163" column="83" lean-forward="false" selection-start-line="163" selection-start-column="83" selection-end-line="163" selection-end-column="83" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="173">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="all-instructors.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pythonAdmin/all-instructors.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -170,22 +71,66 @@
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/admin/index.php">
+        <entry file="file://$PROJECT_DIR$/java/editor/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="-260">
+              <caret line="162" column="34" lean-forward="true" selection-start-line="162" selection-start-column="34" selection-end-line="162" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logout.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/logout.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-instructor-backend.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/backend/add-instructor-backend.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="14" selection-end-column="26" />
               <folding>
-                <element signature="e#144#171#0#PHP" expanded="true" />
+                <element signature="e#150#179#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/javaAdmin/dashboard.php">
+      <file leaf-file-name="instructorUpload-backend.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/backend/instructorUpload-backend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="234">
+              <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+              <folding>
+                <element signature="e#150#179#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="add-student.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/backend/add-student.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="27" />
+              <folding>
+                <element signature="e#150#179#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="overall-result.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/admin/backend/overall-result.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -211,16 +156,24 @@
         <option value="$PROJECT_DIR$/java/index.php" />
         <option value="$PROJECT_DIR$/student/student.php" />
         <option value="$PROJECT_DIR$/student/logout.php" />
-        <option value="$PROJECT_DIR$/java/editor/index.php" />
         <option value="$PROJECT_DIR$/python/index.php" />
         <option value="$PROJECT_DIR$/python/editor/index.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Core/Auto/Course.php" />
-        <option value="$PROJECT_DIR$/database.php" />
         <option value="$PROJECT_DIR$/Core/Auto/Admin.php" />
         <option value="$PROJECT_DIR$/admin/login.php" />
         <option value="$PROJECT_DIR$/admin/dashboard.php" />
         <option value="$PROJECT_DIR$/admin/index.php" />
+        <option value="$PROJECT_DIR$/javaAdmin/backend/add-student.php" />
+        <option value="$PROJECT_DIR$/admin/view-class.php" />
+        <option value="$PROJECT_DIR$/admin/backend/overall-result.php" />
+        <option value="$PROJECT_DIR$/admin/overall-result.php" />
+        <option value="$PROJECT_DIR$/admin/add-instructor.php" />
+        <option value="$PROJECT_DIR$/admin/backend/add-instructor-backend.php" />
+        <option value="$PROJECT_DIR$/admin/backend/instructorUpload-backend.php" />
+        <option value="$PROJECT_DIR$/admin/instructionUpload.php" />
+        <option value="$PROJECT_DIR$/database.php" />
+        <option value="$PROJECT_DIR$/java/editor/index.php" />
       </list>
     </option>
   </component>
@@ -247,8 +200,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="28" />
-    <option name="y" value="-4" />
+    <option name="y" value="-50" />
     <option name="width" value="1364" />
     <option name="height" value="764" />
   </component>
@@ -281,24 +233,18 @@
             <path>
               <item name="Auto-grade" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto-grade" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="java" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Auto-grade" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto-grade" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="javaAdmin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="java" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="editor" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Auto-grade" type="b2602c69:ProjectViewProjectNode" />
               <item name="Auto-grade" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="javaAdmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="Auto-grade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Auto-grade" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="javaAdmin" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="student" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -348,12 +294,12 @@
       <updated>1524254674694</updated>
       <workItem from="1524254680705" duration="5244000" />
       <workItem from="1524262343618" duration="1162000" />
-      <workItem from="1524603499848" duration="4747000" />
+      <workItem from="1524603499848" duration="9420000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11153000" />
+    <option name="totallyTimeSpent" value="15826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
@@ -367,7 +313,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281493" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.56369424" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -390,104 +336,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/init.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Auto/Mems/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="18" column="27" lean-forward="false" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="8" lean-forward="false" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/student/css/instruction.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaAdmin/backend/add-instructor-backend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaAdmin/backend/add-student.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-368">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javaAdmin/backend/view-class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-175">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/illuminate/support/Facades/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="30" column="6" lean-forward="false" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/generalInstruction/classInstruction.php" />
-    <entry file="file://$PROJECT_DIR$/Core/Auto/Mems/Cookie.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Auto/Mems/Hash.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="7" column="24" lean-forward="false" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Auto/Mems/Redirect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Core/Auto/Mems/Token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Core/Auto/Mems/Input.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
@@ -504,32 +352,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/student/logout.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-          <folding>
-            <element signature="e#144#170#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/java/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding>
             <element signature="e#63#89#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/editor/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="6" column="24" lean-forward="false" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-          <folding>
-            <element signature="e#69#95#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -636,16 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
-          <caret line="31" column="29" lean-forward="false" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="e#119#138#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/css/phpFormStyle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -721,14 +539,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/view-class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/javaAdmin/csc201.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3857">
@@ -753,23 +563,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/admin/add-instructor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/all-instructors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin/instructionUpload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -780,7 +574,7 @@
     <entry file="file://$PROJECT_DIR$/admin/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -790,8 +584,174 @@
         <state relative-caret-position="312">
           <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
           <folding>
-            <element signature="e#144#171#0#PHP" expanded="true" />
+            <element signature="e#144#171#0#PHP" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaAdmin/backend/overall-result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-103">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaAdmin/backend/view-class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaAdmin/backend/csc202-backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaAdmin/backend/csc201-backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaAdmin/backend/add-student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="30" column="25" lean-forward="false" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaAdmin/backend/add-instructor-backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/view-class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="139" column="152" lean-forward="false" selection-start-line="139" selection-start-column="152" selection-end-line="139" selection-end-column="152" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/backend/view-class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/overall-result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="267" column="79" lean-forward="false" selection-start-line="267" selection-start-column="79" selection-end-line="267" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/backend/add-instructor-backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#150#179#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/backend/add-student.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="e#150#179#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/backend/instructorUpload-backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="14" column="26" lean-forward="false" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#150#179#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/backend/overall-result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/add-instructor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="154" column="184" lean-forward="false" selection-start-line="154" selection-start-column="184" selection-end-line="154" selection-end-column="184" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/instructionUpload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="163" column="83" lean-forward="false" selection-start-line="163" selection-start-column="83" selection-end-line="163" selection-end-column="83" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/zend/zend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="637" column="7" lean-forward="true" selection-start-line="637" selection-start-column="7" selection-end-line="637" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pythonAdmin/all-instructors.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="16" column="25" lean-forward="false" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/editor/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="162" column="34" lean-forward="true" selection-start-line="162" selection-start-column="34" selection-end-line="162" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
