@@ -142,6 +142,20 @@
                                                 <input type="text" name="department" class="form-control border-input" placeholder="Computer Science">
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class ="row">
+                                        <div class ="col-md-12">
+                                            <div class ="form-group">
+                                                <label for ="class" >Class</label>
+                                                <select id ="class" class ="form-control border-input">
+                                                    <option value ="">Select Class</option>
+                                                    <option value ="1">Java</option>
+                                                    <option value ="2">Python</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class ="row">
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Matric Number</label>
