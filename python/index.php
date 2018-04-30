@@ -3,9 +3,11 @@ include '../vendor/autoload.php';
 include "../init.php";
 use App\Auto\Mems\Session;
 use App\Auto\Mems\Redirect;
+use App\Auto\Instruction;
 if (!Session::exists('login')){
     Redirect::to('../student/student.php');
 }
+$instruction = Instruction::where('course','python')->get()->first();
 ?>
 <!Doctype>
 <html lang ="en">

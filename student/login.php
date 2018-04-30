@@ -25,9 +25,9 @@ if (Input::exists('post')){
             Session::put('login',true);
             Session::put('student', $student->get()->first());
             Session::put('code', Input::get('code_class'));
-            if (Input::get('code_class')== 'java-code'){
+            if (Input::get('code_class')== 'java'){
                 Redirect::to('../java/');
-            }elseif(Input::get('code_class') == 'python-code'){
+            }elseif(Input::get('code_class') == 'python'){
                 Redirect::to('../python');
             }
         }else{

@@ -13,12 +13,25 @@ use App\Auto\Mems\Redirect;
 use App\Auto\Mems\Hash;
 use App\Auto\Mems\Input;
 use App\Auto\Mems\Session;
+use App\Auto\Instruction;
+
+if(!Session::exists('admin')){
+    Redirect::to('../login.php');
+}
 $validate = new Validation();
-
-$validate->check($_POST,[]);
-
-if ($validate->passed()){
-
-}else{
-
+if(Input::exists()){
+    $validate->check($_POST,[
+        'course'=> ['required'=> true],
+        'detail' => ['required'=> true]
+    ]);
+    if($validate->passed()){
+        $instruct = new Instruction();
+        $instruct->course = Input::get('course');
+        $instruct->details = Input::get('detail');
+        $instruct->admin_id = Session::get('admin')->id;
+        $instruct->save();
+        Redirect::to('../dashboard.php');
+    }else{
+        echo 'enter valid input';
+    }
 }

@@ -62,8 +62,7 @@
     text-transform: uppercase"><i class="ti-user"></i>Student Management</a>
                     <ul id="submenu" class="collapse">
                         <li class="hide-dot"><a href="add-student.php">Add Student</a></li>
-                        <li class="hide-dot active"><a href="view-class.php">View Department</a></li>
-                        <li class="hide-dot"><a href="overall-result.php">View Result</a></li>
+                        <li class="hide-dot active"><a href="view-class.php">View Result</a></li>
                     </ul>
 
                 </li>
@@ -75,8 +74,7 @@
     text-transform: uppercase"><i class="ti-book"></i>Course Management</a>
                     <ul id="subcourse" class="collapse">
                         <li class="hide-dot"><a href="instructionUpload.php">Upload Instruction</a></li>
-                        <li class="hide-dot"><a href="csc201.php">CSC 201</a></li>
-                        <li class="hide-dot"><a href="csc202.php">CSC 202</a></li>
+                        <li class="hide-dot"><a href="questions.php">Add Questions</a></li>
                     </ul>
 
                 </li>
@@ -86,6 +84,7 @@
                         <p>Add Instructor</p>
                     </a>
                 </li>
+                <li><a href="logout.php" class="btn btn--round">logout</a></li>
             </ul>
     	</div>
     </div>
@@ -100,7 +99,7 @@
                         <span class="icon-bar bar2"></span>
                         <span class="icon-bar bar3"></span>
                     </button>
-                    <a class="navbar-brand" href="#">View Department</a>
+                    <a class="navbar-brand" href="#">View Result</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -134,16 +133,28 @@
                             <div class="content">
 
                                     <div class="row">
-                                        <div class="col-md-12">
+                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label>Search Department</label>
-                                                <input type="text" id="view" name="department"   class="form-control border-input" placeholder="Search">
+                                                <label for ="course">Course</label>
+                                                <select type ="text" id ="course" class ="form-control border-input">
+                                                    <option>-Select course-</option>
+                                                    <option value ="csc101">CSC 101</option>
+                                                    <option value ="csc102">CSC 102<option>
+                                                    <option value ="csc201">CSC 201</option>
+                                                    <option value ="csc202">CSC 202</option>
+                                                </select>
+                                                <!--<input type="text" id="view" name="department"   class="form-control border-input" placeholder="Department's name">-->
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for ="department">Department</label>
+                                                <input type="text" id="department" name="department"   class="form-control border-input" placeholder="Department's name">
                                             </div>
                                         </div>
                                     </div>
                                     <div class="text-right">
-                                        <button type="submit" class="btn btn-info btn-fill btn-wd">View Department</button>
-                                        <button type="submit" id="submit"  class="btn btn-info btn-fill btn-wd">View Class</button>
+                                        <button type="submit" id="submit"  class="btn btn-info btn-fill btn-wd">View Result</button>
                                     </div>
                                     <div class="clearfix"></div>
                             </div>
@@ -154,8 +165,8 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Computer Science Department</h4>
-                                <p class="category">Below is the list of students in this department</p>
+                                <h4 class="title">Department's Name</h4>
+                                <!--<p class="category">Below is the list of students in this department</p>-->
                             </div>
                             <div class="content table-responsive table-full-width">
                                 <table class="table table-striped">
@@ -163,15 +174,16 @@
                                     <th>ID</th>
                                     <th>Full Name</th>
                                     <th>Matric Number</th>
-                                    <th>Action</th>
+                                    <th>Result</th>
                                     </thead>
                                     <tbody id="table-body">
-                                    <tr>
+                                    <!--<tr>
                                         <td>1</td>
                                         <td>Oluwadare Matthew</td>
                                         <td>CSC/2013/100</td>
-                                        <td><a role="button" class="btn btn-success btn-wd"> View Result</a></td>
-                                    </tr>
+                                        <td>Score</td>
+                                        <!--<td><a role="button" class="btn btn-success btn-wd"> View Result</a></td>
+                                    </tr>-->
                                     </tbody>
                                 </table>
 
@@ -214,7 +226,7 @@
     $(function () {
        $("#submit").click(function () {
            //check for input
-           var name = $("#view").val();
+           var name = $("#department").val();
            if (!name ==''){
                console.log(name);
                $.ajax({
@@ -246,7 +258,7 @@
             $('#table-body')
                 .append(
                     "<tr><td>"+ element.id+ "</td><td>"+element.name+ "</td><td>"
-                    +element.matric_number +"</td><td><a role='button' class='btn btn-success btn-wd'>View Result</a></td> </tr>"
+                    +element.matric_number
             );
         }
     }

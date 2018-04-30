@@ -44,6 +44,6 @@ Capsule::schema()->create('questions', function (Blueprint $table){
     $table->integer('semester_id');
     $table->string('course')->default('java');
     $table->longText('answer')->nullable();
-    $table->time('length');
+    $table->integer('duration')->nullable();
     $table->timestamps();
 });
