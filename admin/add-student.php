@@ -143,15 +143,16 @@ include '../init.php';
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Department</label>
-                                                <?php
-                                                $dept = App\Auto\Department::orderby('name')->get();
 
-                                                foreach ($dept as $name){
-                                                    ?>
-                                                    <option value="<?= $name->id ?>"><?= $name->name?></option>
-                                                <?php }?>
                                                 <select name="department" class="form-control border-input" >
                                                     <option >Select a department</option>
+                                                    <?php
+                                                    $dept = App\Auto\Department::orderby('name')->get();
+
+                                                    foreach ($dept as $name){
+                                                        ?>
+                                                        <option value="<?= $name->id ?>"><?= $name->name?></option>
+                                                    <?php }?>
                                                 </select>
                                             </div>
                                         </div>
@@ -160,10 +161,14 @@ include '../init.php';
                                         <div class ="col-md-12">
                                             <div class ="form-group">
                                                 <label for ="class" >Class</label>
-                                                <select id ="class" class ="form-control border-input">
+                                                <select id ="class" class ="form-control border-input" name="class_id">
                                                     <option value ="">Select Class</option>
-                                                    <option value ="1">Java</option>
-                                                    <option value ="2">Python</option>
+                                                    <?php
+                                                    $class = \App\Auto\Classes::orderBy('name')->get();
+                                                    foreach ($class as $name){
+                                                    ?>
+                                                    <option value ="<?= $name->id ?>"> <?= $name->name?></option>
+                                                    <?php }?>
                                                 </select>
                                             </div>
                                         </div>

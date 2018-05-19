@@ -1,3 +1,7 @@
+<?php
+include "../vendor/autoload.php";
+include "../init.php";
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -154,43 +158,34 @@
                                                 <label>Select Course</label>
                                                 <select name="course" class="form-control border-input">
                                                     <option>-Select Course-</option>
-                                                    <option value ="csc101">CSC 101 </option>
-                                                    <option value ="csc102">CSC 102</option>>
-                                                <select name="course" class="form-control">
-                                                    <option value="csc201">CSC 201</option>
-                                                    <option value="csc202">CSC 202</option>
+                                                    <?php
+                                                    $courses = \App\Auto\Course::orderBy('name')->get();
+                                                    foreach ($courses as $course) {
+                                                    ?>
+                                                    <option value ="<?= $course->id ?>"><?= $course->name ?></option>
+                                                    <?php } ?>
                                                 </select>
                                             </div>
 
-                                        </div>
-                                        <div class="col-sm-12 col-md-12">
-                                            <div class="form-group">
-                                                <label>Select Semester</label>
-                                                <select name="semester" class="form-control border-input">
-                                                <select name="semester" class="form-control">
-                                                    <option value="1">First Semester</option>
-                                                    <option value="2">Second Semester</option>
-                                                </select>
-                                            </div>
                                         </div>
                                         <div class="col-sm-12 col-md-12">
                                             <div class ="row">
                                                 <div class ="col-sm-4 col-md-4">
                                                     <div class ="form-group">
                                                         <label for ="hour">Enter Hour</label>
-                                                        <input name ="duration" id ="hour" class ="form-control border-input">
+                                                        <input name ="duration_hour" id ="hour" class ="form-control border-input">
                                                     </div>
                                                 </div>
                                                 <div class ="col-sm-4 col-md-4">
                                                     <div class ="form-group">
                                                         <label for ="mins">Enter Minutes</label>
-                                                        <input name ="duration" id ="mins" class ="form-control border-input">
+                                                        <input name ="duration_min" id ="mins" class ="form-control border-input">
                                                     </div>
                                                 </div>
                                                 <div class ="col-sm-4 col-md-4">
                                                     <div class ="form-group">
                                                         <label for ="sec">Enter Second</label>
-                                                        <input name ="duration" id ="sec" class ="form-control border-input">
+                                                        <input name ="duration_second" id ="sec" class ="form-control border-input">
                                                     </div>
                                                 </div>
                                             </div>
@@ -199,18 +194,14 @@
                                             <div class="form-group">
                                                 <label>Course Type</label>
                                                 <select name="q_type" class="form-control border-input">
-                                                    <option value="java">java</option>
-                                                    <option value="python">python</option>
+                                                    <option value="java">Pls Choose class</option>
+                                                    <?php
+                                                    $classes = \App\Auto\Classes::orderBy('name')->get();
+                                                    foreach ($classes as $class) {
+                                                    ?>
+                                                    <option value="<?= $class->id ?>"><?= $class->name ?></option>
+                                                    <?php }?>
                                                 </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    </div><!-- End Row -->
-
-
-                                            <div class="form-group">
-                                                <label>Enter Duration</label>
-                                                <input name="duration" class="form-control" />
                                             </div>
                                         </div>
                                     </div>
@@ -245,7 +236,7 @@
                     <div class="col-lg-12 col-md-12">
                         <div class="card">
                             <div class="header">
-                                <h4 class="title">Upload CSC 201 Model Answer</h4>
+                                <h4 class="title">Upload Model Answer</h4>
                             </div>
                             <div class="content">
 
@@ -254,7 +245,6 @@
                                         <div class="form-group">
                                             <label>Answer</label>
                                             <textarea  name="answer" class ="form-control border-input" rows ="4" type ="text" placeholder ="Write the model answer here" required></textarea>
-                                            <textarea  name="answer" class ="form-control border-input" rows ="4" type ="text" placeholder ="Type course questions here" required></textarea>
                                         </div>
                                         <input type="submit" name="submit" value="submit" class="btn btn-success"/>
                                     </div>

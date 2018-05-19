@@ -23,7 +23,8 @@ if ($validator->passed()){
     $student = new \App\Auto\Student();
     $student->name = $_POST['student_name'];
     $student->matric_number = $_POST['matric_number'];
-    $student->department = $_POST['department'];
+    $student->department_id = $_POST['department'];
+    $student->class_id = $_POST['class_id'];
     if ($student->save()){
         Redirect::to('../dashboard.php');
 

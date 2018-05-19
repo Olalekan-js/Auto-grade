@@ -24,14 +24,16 @@ $capsule->addConnection([
 ]);
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
-/*Capsule::schema()->create('questions', function (Blueprint $table){
+Capsule::schema()->create('questions', function (Blueprint $table){
     $table->increments('id');
     $table->longText('question');
     $table->integer('semester_id')->default(0);
     $table->integer('course_id')->default(0);
     $table->longText('answer')->nullable();
-    $table->integer('duration')->nullable();
-    $table->string('q_type')->nullable();
+    $table->integer('duration_hour')->nullable()->default(0);
+    $table->integer('duration_min')->nullable()->default(0);
+    $table->integer('duration_second')->nullable()->default(0);
+    $table->string('q_class')->nullable();
     $table->timestamps();
 });
 
@@ -62,9 +64,10 @@ Capsule::schema()->create('instructions', function (Blueprint $table){
 
 Capsule::schema()->create('students', function (Blueprint $table){
    $table->increments('id');
-   $table->integer('matric_number');
+   $table->string('matric_number');
    $table->string('name')->nullable();
    $table->integer('department_id');
+   $table->integer('class_id')->nullable();
    $table->timestamps();
 });
 
@@ -82,6 +85,12 @@ Capsule::schema()->create('courses',function (Blueprint $table){
    $table->timestamps();
 });
 
+Capsule::schema()->create('classes', function (Blueprint $table){
+   $table->increments('id');
+   $table->string('name');
+   $table->text('description')->nullable();
+   $table->timestamps();
+});
 $departments = [
     'mth'=>'Mathematics',
     'chm' => 'Chemistry',
@@ -114,8 +123,8 @@ $courses = [
 ];
 
 $class = [
-    'java', 'python'
-]
+    'Java', 'Python'
+];
 
 foreach ($departments as $code => $dept){
 
@@ -123,4 +132,15 @@ foreach ($departments as $code => $dept){
     $name->code = $code;
     $name->name = $dept;
     $name->save();
+}
+foreach ($courses  as $code => $course) {
+    $koz = new  \App\Auto\Course();
+    $koz->name = $course;
+    $koz->code = $code;
+    $koz->save();
+}
+foreach ($class as $klass) {
+    $main = new App\Auto\Classes();
+    $main->name = $klass;
+    $main->save();
 }

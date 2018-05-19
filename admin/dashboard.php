@@ -1,6 +1,8 @@
 <?php
-include '../../vendor/autoload.php';
-include "../../init.php";
+include '../vendor/autoload.php';
+include "../init.php";
+use App\Auto\Mems\Session;
+use App\Auto\Mems\Redirect;
 if (!Session::exists('login') && !Session::exists('admin')){
     Redirect::to('login.php');
 }

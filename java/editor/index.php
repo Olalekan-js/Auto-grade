@@ -7,7 +7,8 @@ use App\Auto\Question;
 if (!Session::exists('login')){
     Redirect::to('../../student/student.php');
 }
-$questions = Question::where('q_type','java')->get()->first();
+$questions = Question::where('q_class',Session::get('code'))->get()->first();
+echo $questions->duration_hour;
 ?>
 <html>
 <head>
@@ -21,20 +22,20 @@ $questions = Question::where('q_type','java')->get()->first();
 <script >
 var ch=0;
 $(document).ready(function(){
-  
+
   $("h3").hover(function(){
  $(this).css("cursor","hand");
-  
+
  $(this).css("color","blue");
    },
    function(){
  $(this).css("color","black");
  $(this).css("cursor","pointer");
  });
- 
+
   $("#flip").hover(function(){
  $(this).css("cursor","hand");
-  
+
  $(this).css("color","blue");
    },
    function(){
@@ -42,16 +43,16 @@ $(document).ready(function(){
  $(this).css("cursor","pointer");
  });
  $("#flip").click(function(){
-  
+
    $('html, body').animate({ scrollTop:0 }, 'slow');
-   
+
     if(ch%2==0){
       $("#sample").delay(100);
       $("#sample").slideToggle("900").effect("bounce",{ times:3 }, 250);
       ch++;
       }
       else
-      { 
+      {
             $("#sample").effect("bounce", { times:3 }, 250).slideToggle("900");
       ch++;
       $("#sample").delay(100);
@@ -80,7 +81,7 @@ document.getElementById('code1').value = code;
 function getVal()
 {
                        // "editor" is the id of the editor div
- //alert("efew");    
+ //alert("efew");
   var code = editor.getSession().getValue();
  var ext1= $('#ext').val();
   document.getElementById('code1').value = code;
@@ -112,14 +113,14 @@ xmlhttp.onreadystatechange=function()
 xmlhttp.open("POST","compilerz.php",true);
 xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 xmlhttp.send(data);
-                    
+
 
 }
 </script>
 <!-- HANDLING THE SAMPLE PROGRAM -->
-<script>  
+<script>
   function samplefunc($s)
-{  // ajax stuff 
+{  // ajax stuff
    var xmlhttp;
   xmlhttp=new XMLHttpRequest();
   var prog_name=$s;
@@ -138,7 +139,7 @@ xmlhttp.onreadystatechange=function()
 	  editor.setValue(sample_code);
     }
   }
-   
+
 }
   </script>
   </head>
@@ -245,7 +246,7 @@ xmlhttp.onreadystatechange=function()
 
       <form>
         <textarea id ="codeTextarea" readonly style ="resize: none">
-            HOW IT WORKS 
+            HOW IT WORKS
 
 Write your code/program in the your source code section (i.e the right box)
 
@@ -256,7 +257,7 @@ Click on the "Run your program" button to compile and execute your program
 The output to your program will come here (i.e the output section)
         </textarea>
       </form>
- 
+
     </article>
     <section>
       <h4 id ="inputheading"> type here your input stream:</h4>
@@ -267,18 +268,18 @@ The output to your program will come here (i.e the output section)
     </section>
   <script>
       $('#hms_timer').countdowntimer({
-          hours : 8,
-          minutes : 30,
-          seconds : 30,
+          hours : "<?= $questions->duration_hour ?>",
+          minutes : "<?= $questions->duration_min ?>",
+          seconds : "<?= $questions->duration_second ?>",
           size : 'lg',
           expiryUrl: 'answer.php'
       })
   </script>
   <script>
       $('#hms_timer').countdowntimer({
-          hours : "<?= $questions->first()->duration ?>",
-          minutes : 30,
-          seconds : 30,
+          hours : "<?= $questions->duration_hour ?>",
+          minutes : "<?= $questions->duration_min ?>",
+          seconds : "<?= $questions->duration_second ?>",
           size : 'lg',
           expiryUrl: 'answer.php'
       })

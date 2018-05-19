@@ -12,6 +12,7 @@ use App\Auto\Student;
 use App\Auto\Mems\Redirect;
 use App\Auto\Mems\Input;
 use App\Auto\Mems\Session;
+use App\Auto\Classes;
 if (Input::exists('post')){
 
     $validation = new Validation();
@@ -25,15 +26,17 @@ if (Input::exists('post')){
             Session::put('login',true);
             Session::put('student', $student->get()->first());
             Session::put('code', Input::get('code_class'));
-            if (Input::get('code_class')== 'java'){
+            if (Classes::find(Input::get('code_class'))->name== 'Java'){
                 Redirect::to('../java/');
-            }elseif(Input::get('code_class') == 'python'){
+            }elseif(Classes::find(Input::get('code_class'))->name == 'Python'){
                 Redirect::to('../python');
             }
         }else{
+            var_dump($student->first());
          Redirect::to('student.php');
         }
     }else{
+
         Session::put('errors',$validation->errors());
         Redirect::to('student.php');
     }

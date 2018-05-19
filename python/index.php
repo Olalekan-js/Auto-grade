@@ -7,7 +7,7 @@ use App\Auto\Instruction;
 if (!Session::exists('login')){
     Redirect::to('../student/student.php');
 }
-$instruction = Instruction::where('course','python')->get()->first();
+$instruction = Instruction::where('id',1)->get()->first();
 ?>
 <!Doctype>
 <html lang ="en">

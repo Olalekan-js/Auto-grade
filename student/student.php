@@ -25,8 +25,12 @@ if (Session::exists('login')){
 
         <label for ="selectClass">Select Class</label>
         <select id ="selectClass" name="code_class">
-            <option value="java">Java Class</option>
-            <option value="python">Python Class</option>
+            <?php
+            $classes = \App\Auto\Classes::orderBy('name')->get();
+            foreach ($classes as $class){
+            ?>
+            <option value="<?= $class->id ?>"><?= $class->name ?></option>
+            <?php } ?>
         </select>
         <input type ="submit" name ="login" value ="Login">
 

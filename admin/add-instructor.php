@@ -1,3 +1,12 @@
+<?php
+include '../vendor/autoload.php';
+include "../init.php";
+use App\Auto\Mems\Redirect;
+use App\Auto\Mems\Session;
+if (!Session::exists('admin')){
+    Redirect::to('login.php');
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>

@@ -23,19 +23,23 @@ if (Input::exists('post')) {
         'question' => ['required' => true,],
         'course' => ['required' => true],
         'answer' => ['required' => true],
-        'semester' => ['required' => true],
-        'duration' => ['required'],
+        'duration_hour' => ['required'=>true],
+        'duration_min' => ['required'=>true],
+        'duration_second' => ['required'=>true],
         'q_type' => ['required'=> true]
     ]);
     if ($validator->passed()) {
         $question = new \App\Auto\Question();
-        $question->course = Input::get('course');
+        $question->course_id = Input::get('course');
         $question->question = Input::get('question');
         $question->answer = Input::get('answer');
-        $question->semester_id = Input::get('semester');
-        $question->duration = Input::get('duration');
-        $question->q_type = Input::get('q_type');
+        $question->duration_hour = Input::get('duration_hour');
+        $question->duration_min = Input::get('duration_min');
+        $question->duration_second = Input::get('duration_second');
+        $question->q_class = Input::get('q_type');
         $question->save();
         Redirect::to('../dashboard.php');
+    }else{
+        var_dump($validator->errors());
     }
 }

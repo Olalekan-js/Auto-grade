@@ -7,7 +7,7 @@ use App\Auto\Question;
 if (!Session::exists('login')){
     Redirect::to('../../student/student.php');
 }
-$questions = Question::where('q_type','python')->get()->first();
+$questions = Question::where('q_class',Session::get('code'))->get()->first();
 ?>
 <html>
 <head>
@@ -261,9 +261,9 @@ The output to your program will come here (i.e the output section)
     </section>
   <script>
       $('#hms_timer').countdowntimer({
-          hours : "<?= $questions->first()->duration ?>",
-          minutes : 30,
-          seconds : 30,
+          hours : "<?= $questions->duration_hour ?>",
+          minutes : "<?= $questions->duration_min ?>",
+          seconds : "<?= $questions->duration_second ?>",
           size : 'lg',
           expiryUrl: 'answer.php'
       })

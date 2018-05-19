@@ -1,3 +1,7 @@
+<?php
+include "../vendor/autoload.php";
+include "../init.php";
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -148,8 +152,6 @@
                 </div>
             </div>
         </nav> <!-- head navigation bar end -->
-
-
         <div class="content">
             <div class="container-fluid">
                 <div class="row">
@@ -166,10 +168,12 @@
                                                 <label>Select Course</label>
                                                 <select name="course" class ="form-control border-input">
                                                     <option value ="">Select</option>
-                                                    <option value ="csc101">CSC 101</option>
-                                                    <option value ="csc102">CSC 102</option>
-                                                    <option value ="csc 201">CSC 201</option>
-                                                    <option value ="csc 202">CSC 202</option>
+                                                    <?php
+                                                    $courses = \App\Auto\Course::orderBy('name')->get();
+                                                    foreach ($courses as $course) {
+                                                    ?>
+                                                    <option value ="<?= $course->id ?>"><?= $course->name ?></option>
+                                                    <?php } ?>
                                                 </select>
                                             </div>
                                         </div>
@@ -179,9 +183,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Instruction</label>
-                                                <textarea name="detail" type ="text" rows="6" class="form-control border-input" placeholder="Type the course instruction here">
-
-                                                </textarea>
+                                                <textarea name="detail" type ="text" rows="6" class="form-control border-input" placeholder="Type the course instruction here"></textarea>
                                             </div>
                                         </div>
                                     </div>

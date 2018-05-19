@@ -26,7 +26,7 @@ if(Input::exists()){
     ]);
     if($validate->passed()){
         $instruct = new Instruction();
-        $instruct->course = Input::get('course');
+        $instruct->course_id = Input::get('course');
         $instruct->details = Input::get('detail');
         $instruct->admin_id = Session::get('admin')->id;
         $instruct->save();
