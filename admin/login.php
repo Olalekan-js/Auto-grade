@@ -24,7 +24,7 @@ if (Input::exists('post')){
     ]);
 
     if ($valid->passed()){
-        $admin = Admin::where('instructor_id',Input::get('instructure_id'));
+        $admin = Admin::where('instructor_id',Input::get('instructor_id'));
         if ($admin->exists()){
             $password = \App\Auto\Mems\Hash::make(Input::get('password'));
             if ($password !== $admin->get()->first()->password){

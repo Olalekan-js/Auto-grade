@@ -11,11 +11,12 @@ $questions = Question::where('course','java')->get();
 ?>
 <html>
 <head>
-<script src="jquery.min.js">
-</script>
-<script src="jquery-ui.min.js">
-</script>
-<link rel="stylesheet" type="text/css" href="custom.css"/>
+
+    <link rel="stylesheet" type="text/css" href="custom.css"/>
+    <link rel="stylesheet" type="text/css" href="jQuery.countdownTimer.css">
+<script src="jquery.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+    <script src="jQuery.countdownTimer.js"></script>
 <!-- hyperlink effects on sample program list -->
 <script >
 var ch=0;
@@ -166,6 +167,7 @@ xmlhttp.onreadystatechange=function()
 
       <p class ="but3">
         <button class ="showTime"><time datetime ="">HH:MM</time></button>
+          <span id="hms_timer">
       </p>
 
       <p class ="but2">
@@ -256,19 +258,14 @@ The output to your program will come here (i.e the output section)
         <textarea id ="input" rows ='7' cols ='25'></textarea>
       </form>
     </section>
-
-  <!--</br></br>
-  </div>
-    <span>
-     <textarea id="codeTextarea" readonly style ="resize:none;">
-  	 
-       
-   
-          </textarea>
-	 </span> 
-     <h4 id="inputheading" >TYPE HERE YOUR INPUT STREAM </h4>     
-<textarea id="input" rows='7' cols='25'>
-</textarea>-->  
-  
+  <script>
+      $('#hms_timer').countdowntimer({
+          hours : "<?= $questions->first()->duration ?>",
+          minutes : 30,
+          seconds : 30,
+          size : 'lg',
+          expiryUrl: 'answer.php'
+      })
+  </script>
   </body>
   </html>
