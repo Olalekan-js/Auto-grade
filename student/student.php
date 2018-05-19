@@ -21,12 +21,12 @@ if (Session::exists('login')){
 
         <legend>Student Login Page</legend>
         <label for ="matric">Registration Number</label>
-        <input type ="text" name ="matric" value="<?= $_POST['matric']?>" id="matric" required><br>
+        <input type ="text" name ="matric" id="matric" required><br>
 
         <label for ="selectClass">Select Class</label>
         <select id ="selectClass" name="code_class">
-            <option value="java-code">Java Class</option>
-            <option value="python-code">Python Class</option>
+            <option value="java">Java Class</option>
+            <option value="python">Python Class</option>
         </select>
         <input type ="submit" name ="login" value ="Login">
 

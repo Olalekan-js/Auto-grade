@@ -24,7 +24,8 @@ if (Input::exists('post')) {
         'course' => ['required' => true],
         'answer' => ['required' => true],
         'semester' => ['required' => true],
-        'duration' => ['required']
+        'duration' => ['required'],
+        'q_type' => ['required'=> true]
     ]);
     if ($validator->passed()) {
         $question = new \App\Auto\Question();
@@ -33,6 +34,7 @@ if (Input::exists('post')) {
         $question->answer = Input::get('answer');
         $question->semester_id = Input::get('semester');
         $question->duration = Input::get('duration');
+        $question->q_type = Input::get('q_type');
         $question->save();
         Redirect::to('../dashboard.php');
     }

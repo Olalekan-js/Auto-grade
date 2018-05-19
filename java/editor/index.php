@@ -7,7 +7,7 @@ use App\Auto\Question;
 if (!Session::exists('login')){
     Redirect::to('../../student/student.php');
 }
-$questions = Question::where('course','java')->get();
+$questions = Question::where('q_type','java')->get()->first();
 ?>
 <html>
 <head>
@@ -38,9 +38,10 @@ $(document).ready(function(){
  $(this).css("color","blue");
    },
    function(){
- $(this).css("color","black");
+ $(this).css("color","white");
  $(this).css("cursor","pointer");
- });   $("#flip").click(function(){
+ });
+ $("#flip").click(function(){
   
    $('html, body').animate({ scrollTop:0 }, 'slow');
    
@@ -98,8 +99,12 @@ xmlhttp.onreadystatechange=function()
   {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
-        
-	document.getElementById("codeTextarea").innerHTML=xmlhttp.responseText;
+    var answer = "<?php echo $questions->answer?>";
+    console.log(`answer is => ${answer}`);
+    var output = xmlhttp.responseText.split("</b><br />")[1].trim();
+    var hasError = output.indexOf('Array') != -1;
+	document.getElementById("codeTextarea").innerHTML=xmlhttp.responseText.split("</b><br />")[1].trim();
+  alert(hasError ?  'You scored zero' : output === answer ? 'You scored 100%': 'You scored 20%');
     }
   }
   var data = 'code='+ encodeURIComponent(code)  + '&ext='+ encodeURIComponent(ext1) + '&input='+ encodeURIComponent(input123);
@@ -166,8 +171,8 @@ xmlhttp.onreadystatechange=function()
       <div id ="flip1"><button id='flip' name ="flip">show/hide question</button></div>
 
       <p class ="but3">
-        <button class ="showTime"><time datetime ="">HH:MM</time></button>
-          <span id="hms_timer">
+
+        <span id="hms_timer"></span>
       </p>
 
       <p class ="but2">
@@ -181,17 +186,19 @@ xmlhttp.onreadystatechange=function()
         <!--</div>-->
         <div id ="sample" name ="sample";><!-- open php code -->
           <?php
-            $dh = opendir("sample/java");
+            // $dh = opendir("sample/java");
 
-            while($filename = readdir($dh))
-            {
-              if($filename != '.')
-                if($filename != '..')
-                {
-                  $temp_filename = str_replace(' ', '#@#!', $filename);
-                  echo "<center><h3 onClick = samplefunc('$temp_filename');>". $filename ."</h3></center></br> ";
-                }
-            }
+            // while($filename = readdir($dh))
+            // {
+            //   if($filename != '.')
+            //     if($filename != '..')
+            //     {
+            //       $temp_filename = str_replace(' ', '#@#!', $filename);
+            //       echo "<center><h3 onClick = samplefunc('$temp_filename');>". $filename ."</h3></center></br> ";
+            //     }
+            // }
+            echo $questions->question;
+            // echo $questions->answer;
           ?>
         </div><!-- close php code -->
         <div id = "editor"></div>
@@ -258,6 +265,15 @@ The output to your program will come here (i.e the output section)
         <textarea id ="input" rows ='7' cols ='25'></textarea>
       </form>
     </section>
+  <script>
+      $('#hms_timer').countdowntimer({
+          hours : 8,
+          minutes : 30,
+          seconds : 30,
+          size : 'lg',
+          expiryUrl: 'answer.php'
+      })
+  </script>
   <script>
       $('#hms_timer').countdowntimer({
           hours : "<?= $questions->first()->duration ?>",

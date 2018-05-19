@@ -67,9 +67,7 @@
 					<ul id ="manageStudent" class ="collapse">
 						
 						<li><a href ="add-student.php">Add Student</a></li>
-						<li><a href ="view-class.php">View Department</a></li>
-						<li><a href ="view-result.php">View Result</a></li>
-					
+						<li><a href ="view-class.php">View Result</a></li>
 					</ul>
                 </li>
                 <li class ="active" data-toggle ="collapse" data-target ="#subCourse">
@@ -80,8 +78,7 @@
 					
 					<ul id ="subCourse" class ="collapse">
 						<li class ="active"><a href ="">Upload Instruction</a></li>
-						<li><a href ="csc201.php">CSC 201</a></li>
-						<li><a href ="csc202.php">CSC 202</a></li>
+						<li><a href ="questions.php">Add Question</a></li>
 					</ul>
                 </li>
                 <li>
@@ -90,6 +87,7 @@
                         <p>Add Instructor</p>
                     </a>
                 </li>
+                <li><a href="logout.php" class="btn btn--round">logout</a></li>
                 <!--<li>
                     <a href="icons.html">
                         <i class="ti-pencil-alt2"></i>
@@ -166,8 +164,10 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Select Course</label>
-                                                <select class ="form-control border-input">
+                                                <select name="course" class ="form-control border-input">
                                                     <option value ="">Select</option>
+                                                    <option value ="csc101">CSC 101</option>
+                                                    <option value ="csc102">CSC 102</option>
                                                     <option value ="csc 201">CSC 201</option>
                                                     <option value ="csc 202">CSC 202</option>
                                                 </select>
@@ -179,7 +179,7 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Instruction</label>
-                                                <textarea type ="text" rows="6" class="form-control border-input" placeholder="Type the course instruction here">
+                                                <textarea name="detail" type ="text" rows="6" class="form-control border-input" placeholder="Type the course instruction here">
 
                                                 </textarea>
                                             </div>

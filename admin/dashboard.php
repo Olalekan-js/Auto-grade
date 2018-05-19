@@ -1,4 +1,10 @@
-
+<?php
+include '../../vendor/autoload.php';
+include "../../init.php";
+if (!Session::exists('login') && !Session::exists('admin')){
+    Redirect::to('login.php');
+}
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -69,8 +75,7 @@
     text-transform: uppercase"><i class="ti-user"></i>Student Management</a>
                         <ul id="submenu" class="collapse">
                             <li class="hide-dot"><a href="add-student.php">Add Student</a></li>
-                            <li class="hide-dot"><a href="view-class.php">View Department</a></li>
-                            <li class="hide-dot"><a href="overall-result.php">View Result</a></li>
+                            <li class="hide-dot"><a href="view-class.php">View Result</a></li>
                         </ul>
 
                 </li>
@@ -82,8 +87,7 @@
     text-transform: uppercase"><i class="ti-book"></i>Course Management</a>
                     <ul id="subcourse" class="collapse">
                         <li class="hide-dot"><a href="instructionUpload.php">Upload Instruction</a></li>
-                        <li class="hide-dot"><a href="csc201.php">CSC 201</a></li>
-                        <li class="hide-dot"><a href="csc202.php">CSC 202</a></li>
+                        <li class="hide-dot"><a href="questions.php">Add Question</a></li>
                     </ul>
 
                 </li>
@@ -93,6 +97,7 @@
                         <p>Add Instructor</p>
                     </a>
                 </li>
+                <li><a href="logout.php" class="btn btn--round">logout</a></li>
             </ul>
     	</div>
     </div>

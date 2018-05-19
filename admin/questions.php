@@ -67,6 +67,7 @@
                     <ul id ="manageStudent" class ="collapse">
 
                         <li><a href ="add-student.php">Add Student</a></li>
+                        <li><a href ="view-class.php">View Result</a></li>
                         <li><a href ="view-class.php">View Department</a></li>
                         <li><a href ="view-result.php">View Result</a></li>
 
@@ -80,6 +81,7 @@
 
                     <ul id ="subCourse" class ="collapse">
                         <li><a href ="instructionUpload.php">Upload Instruction</a></li>
+                        <li><a href ="">Add Questions</a></li>
                         <li class ="active"><a href ="csc201.php">CSC 201</a></li>
                         <li><a href ="csc202.php">CSC 202</a></li>
                     </ul>
@@ -90,6 +92,7 @@
                         <p>Add Instructor</p>
                     </a>
                 </li>
+                <li><a href="logout.php" class="btn btn--round">logout</a></li>
             </ul>
         </div>
     </div>
@@ -149,6 +152,10 @@
                                         <div class="col-sm-12 col-md-12">
                                             <div class="form-group">
                                                 <label>Select Course</label>
+                                                <select name="course" class="form-control border-input">
+                                                    <option>-Select Course-</option>
+                                                    <option value ="csc101">CSC 101 </option>
+                                                    <option value ="csc102">CSC 102</option>>
                                                 <select name="course" class="form-control">
                                                     <option value="csc201">CSC 201</option>
                                                     <option value="csc202">CSC 202</option>
@@ -159,6 +166,7 @@
                                         <div class="col-sm-12 col-md-12">
                                             <div class="form-group">
                                                 <label>Select Semester</label>
+                                                <select name="semester" class="form-control border-input">
                                                 <select name="semester" class="form-control">
                                                     <option value="1">First Semester</option>
                                                     <option value="2">Second Semester</option>
@@ -166,6 +174,40 @@
                                             </div>
                                         </div>
                                         <div class="col-sm-12 col-md-12">
+                                            <div class ="row">
+                                                <div class ="col-sm-4 col-md-4">
+                                                    <div class ="form-group">
+                                                        <label for ="hour">Enter Hour</label>
+                                                        <input name ="duration" id ="hour" class ="form-control border-input">
+                                                    </div>
+                                                </div>
+                                                <div class ="col-sm-4 col-md-4">
+                                                    <div class ="form-group">
+                                                        <label for ="mins">Enter Minutes</label>
+                                                        <input name ="duration" id ="mins" class ="form-control border-input">
+                                                    </div>
+                                                </div>
+                                                <div class ="col-sm-4 col-md-4">
+                                                    <div class ="form-group">
+                                                        <label for ="sec">Enter Second</label>
+                                                        <input name ="duration" id ="sec" class ="form-control border-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 col-md-12">
+                                            <div class="form-group">
+                                                <label>Course Type</label>
+                                                <select name="q_type" class="form-control border-input">
+                                                    <option value="java">java</option>
+                                                    <option value="python">python</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div><!-- End Row -->
+
+
                                             <div class="form-group">
                                                 <label>Enter Duration</label>
                                                 <input name="duration" class="form-control" />
@@ -177,6 +219,7 @@
                         </div>
                     </div> <!-- First column of 5spans end -->
                     <div class ="col-lg-12 col-md-7">
+                    <!--<div class ="col-lg-12 col-md-7">
                         <div class ="card">
                             <div class ="header">
                                 <h4 class ="title"><b>Question Preview</b></h4>
@@ -193,6 +236,9 @@
                                 </div>
                             </div>
                         </div>
+                    </div>-->
+                </div><!-- 1st Ends -->
+                <!--<div class="row">-->
                     </div>
                 </div><!-- 1st Ends -->
                 <div class="row">
@@ -207,6 +253,7 @@
                                     <div class="col-sm-12 col-md-12">
                                         <div class="form-group">
                                             <label>Answer</label>
+                                            <textarea  name="answer" class ="form-control border-input" rows ="4" type ="text" placeholder ="Write the model answer here" required></textarea>
                                             <textarea  name="answer" class ="form-control border-input" rows ="4" type ="text" placeholder ="Type course questions here" required></textarea>
                                         </div>
                                         <input type="submit" name="submit" value="submit" class="btn btn-success"/>
@@ -217,6 +264,7 @@
                             </div>
                         </div>
                     </div> <!-- First column of 5spans end -->
+                    <!--<div class ="col-lg-12 col-md-7">
                     <div class ="col-lg-12 col-md-7">
                         <div class ="card">
                             <div class ="header">
@@ -234,6 +282,8 @@
                                 </div>
                             </div>
                         </div>
+                    </div>-->
+                <!--</div>--><!-- 2nd Ends -->
                     </div>
                 </div><!-- 2nd Ends -->
             </div>

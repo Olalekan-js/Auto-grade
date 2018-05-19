@@ -62,8 +62,7 @@
     text-transform: uppercase"><i class="ti-user"></i>Student Management</a>
                     <ul id="submenu" class="collapse">
                         <li class="hide-dot"><a href="add-student.php">Add Student</a></li>
-                        <li class="hide-dot"><a href="view-class.php">View Department</a></li>
-                        <li class="hide-dot"><a href="overall-result.php">View Result</a></li>
+                        <li class="hide-dot"><a href="view-class.php">View Result</a></li>
                     </ul>
 
                 </li>
@@ -75,8 +74,7 @@
     text-transform: uppercase"><i class="ti-book"></i>Course Management</a>
                     <ul id="subcourse" class="collapse">
                         <li class="hide-dot"><a href="upload-instruction.php">Upload Instruction</a></li>
-                        <li class="hide-dot"><a href="cs201.php">CSC 201</a></li>
-                        <li class="hide-dot"><a href="csc202.php">CSC 202</a></li>
+                        <li class="hide-dot"><a href="questions.php">Add Question</a></li>
                     </ul>
 
                 </li>
@@ -86,6 +84,7 @@
                         <p>Add Instructor</p>
                     </a>
                 </li>
+                <li><a href="logout.php" class="btn btn--round">logout</a></li>
             </ul>
     	</div>
     </div>
