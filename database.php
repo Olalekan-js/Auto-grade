@@ -45,6 +45,7 @@ Capsule::schema()->create('results', function (Blueprint $table){
 
 Capsule::schema()->create('admin', function (Blueprint $table){
    $table->increments('id');
+   $table->string('instructor_id')->default(0);
    $table->string('name')->nullable();
    $table->integer('type')->default();
    $table->string('password')->nullable();
@@ -80,3 +81,9 @@ Capsule::schema()->create('courses',function (Blueprint $table){
    $table->string('code')->nullable();
    $table->timestamps();
 });
+
+$departments = [
+    'mth'=>'Mathematics',
+    'chm' => 'Chemistry',
+    'bio'
+];
