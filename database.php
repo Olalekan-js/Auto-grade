@@ -85,5 +85,23 @@ Capsule::schema()->create('courses',function (Blueprint $table){
 $departments = [
     'mth'=>'Mathematics',
     'chm' => 'Chemistry',
-    'bio'
+    'bch' => 'Biochemistry',
+    'msc' => 'Material Science',
+    'btn' => 'Botany',
+    'edu' => 'Education',
+    'mee' => 'Mechanical Engineering',
+    'mbc' => 'Microbiology',
+    'csc' => 'Computer Science and Engineering',
+    'eee' => 'Electrical and Electronics Engineering',
+    'cve' => 'Civil Engineering',
+    'geo' => 'Geology',
+    'fst' => 'Food Science and Technology',
+    'bld' => 'Building',
+    'phy' => 'Physics',
+    'esm' => 'Estate Management',
+    'zoo' => 'Zoology',
+    'qts' => 'Quantity Survey',
+    'age' => 'Agriculture Science and Engineering',
+    'arc' => 'Architecture',
+    'che' => 'Chemical Engineering'
 ];
