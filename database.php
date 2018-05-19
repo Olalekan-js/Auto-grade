@@ -105,3 +105,14 @@ $departments = [
     'arc' => 'Architecture',
     'che' => 'Chemical Engineering'
 ];
+
+$courses = [
+    'csc101' => 'Introduction to Python Language', 
+    'csc102' => 'Python Practical',
+    'csc201' => 'Introduction to Java Language',
+    'csc202' => 'Java Practical'
+];
+
+$class = [
+    'java', 'python'
+]
