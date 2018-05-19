@@ -1,3 +1,7 @@
+<?php
+include '../vendor/autoload.php';
+include '../init.php';
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -139,7 +143,16 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label>Department</label>
-                                                <input type="text" name="department" class="form-control border-input" placeholder="Computer Science">
+                                                <?php
+                                                $dept = App\Auto\Department::orderby('name')->get();
+
+                                                foreach ($dept as $name){
+                                                    ?>
+                                                    <option value="<?= $name->id ?>"><?= $name->name?></option>
+                                                <?php }?>
+                                                <select name="department" class="form-control border-input" >
+                                                    <option >Select a department</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>

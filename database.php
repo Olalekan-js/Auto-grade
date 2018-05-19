@@ -24,7 +24,7 @@ $capsule->addConnection([
 ]);
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
-Capsule::schema()->create('questions', function (Blueprint $table){
+/*Capsule::schema()->create('questions', function (Blueprint $table){
     $table->increments('id');
     $table->longText('question');
     $table->integer('semester_id')->default(0);
@@ -80,10 +80,17 @@ Capsule::schema()->create('courses',function (Blueprint $table){
    $table->string('name')->nullable();
    $table->string('code')->nullable();
    $table->timestamps();
-});
+});*/
 
 $departments = [
     'mth'=>'Mathematics',
     'chm' => 'Chemistry',
-    'bio'
 ];
+
+foreach ($departments as $code => $dept){
+
+    $name = new \App\Auto\Department();
+    $name->code = $code;
+    $name->name = $dept;
+    $name->save();
+}
