@@ -40,7 +40,8 @@ $(document).ready(function(){
    function(){
  $(this).css("color","white");
  $(this).css("cursor","pointer");
- });   $("#flip").click(function(){
+ });   
+ $("#flip").click(function(){
   
    $('html, body').animate({ scrollTop:0 }, 'slow');
    
@@ -98,8 +99,12 @@ xmlhttp.onreadystatechange=function()
   {
   if (xmlhttp.readyState==4 && xmlhttp.status==200)
         {
-        
-	document.getElementById("codeTextarea").innerHTML=xmlhttp.responseText;
+    var answer = "<?php echo $questions->answer?>";  
+    console.log(`answer is => ${answer}`);
+    var output = xmlhttp.responseText.split("</b><br />")[1].trim();
+    var hasError = output.indexOf('Array') != -1;
+	document.getElementById("codeTextarea").innerHTML=xmlhttp.responseText.split("</b><br />")[1].trim();
+  alert(hasError ?  'You scored zero' : output === answer ? 'You scored 100%': 'You scored 20%');
     }
   }
   var data = 'code='+ encodeURIComponent(code)  + '&ext='+ encodeURIComponent(ext1) + '&input='+ encodeURIComponent(input123);
@@ -193,6 +198,7 @@ xmlhttp.onreadystatechange=function()
             //     }
             // }
             echo $questions->question;
+            // echo $questions->answer;
           ?>
         </div><!-- close php code -->
         <div id = "editor"></div>
@@ -202,7 +208,7 @@ xmlhttp.onreadystatechange=function()
           editor = ace.edit("editor");
           editor.setTheme("ace/theme/monokai");
           editor.getSession().setMode("ace/mode/java");
-          // editor.setVal''st2;
+          // editor.setVal''st2; 
           editor.setValue('');
 
           //editor.insert('hhhhhhhh\"hhhh\'hhhhhhhhh\nskbgadxbkjtdj');
@@ -230,7 +236,7 @@ xmlhttp.onreadystatechange=function()
         <br><!-- these are much than this -->
 
         <p class ="but1">
-          <button type ="submit" name = "save" value ='save'>Submit your code for grading</button>
+          <button type ="submit" name = "save" value ='save'><a href ="save.php">Submit your code for grading</a></button>
         </p>
       </form>
 
