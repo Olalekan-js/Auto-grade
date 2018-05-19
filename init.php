@@ -14,9 +14,9 @@ $capsule = new Capsule;
 $capsule->addConnection([
     'driver'    => 'mysql',
     'host'      => 'localhost',
-    'database'  => 'grade',
+    'database'  => 'autograde',
     'username'  => 'root',
-    'password'  => '',
+    'password'  => 'akeebdeen',
     'charset'   => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => '',

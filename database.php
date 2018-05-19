@@ -24,26 +24,59 @@ $capsule->addConnection([
 ]);
 $capsule->setAsGlobal();
 $capsule->bootEloquent();
-/*Capsule::schema()->create('admin',function (Blueprint $blueprint){
-    $blueprint->increments('id');
-    $blueprint->string('instructor_id');
-    $blueprint->string('name')->nullable();
-    $blueprint->string('password');
-    $blueprint->timestamps();
-});*/
-/*Capsule::schema()->create('instructions',function (Blueprint $table){
-    $table->increments('id');
-    $table->text('details');
-    $table->integer('course_id')->nullable();
-    $table->integer('admin_id');
-    $table->timestamps();
-});*/
 Capsule::schema()->create('questions', function (Blueprint $table){
     $table->increments('id');
     $table->longText('question');
-    $table->integer('semester_id');
-    $table->string('course')->default('java');
+    $table->integer('semester_id')->default(0);
+    $table->integer('course_id')->default(0);
     $table->longText('answer')->nullable();
     $table->integer('duration')->nullable();
+    $table->string('q_type')->nullable();
     $table->timestamps();
+});
+
+Capsule::schema()->create('results', function (Blueprint $table){
+    $table->increments('id');
+    $table->integer('student_id');
+    $table->integer('course_id');
+    $table->double('score')->default(0);
+    $table->timestamps();
+});
+
+Capsule::schema()->create('admin', function (Blueprint $table){
+   $table->increments('id');
+   $table->string('name')->nullable();
+   $table->integer('type')->default();
+   $table->string('password')->nullable();
+   $table->timestamps();
+});
+
+Capsule::schema()->create('instructions', function (Blueprint $table){
+   $table->increments('id');
+   $table->string('details');
+   $table->integer('course_id')->default(0);
+   $table->integer('admin_id')->default(0);
+   $table->timestamps();
+});
+
+Capsule::schema()->create('students', function (Blueprint $table){
+   $table->increments('id');
+   $table->integer('matric_number');
+   $table->string('name')->nullable();
+   $table->integer('department_id');
+   $table->timestamps();
+});
+
+Capsule::schema()->create('departments',function (Blueprint $table){
+   $table->increments('id');
+   $table->string('name')->nullable();
+   $table->string('code');
+   $table->timestamps();
+});
+
+Capsule::schema()->create('courses',function (Blueprint $table){
+   $table->increments('id');
+   $table->string('name')->nullable();
+   $table->string('code')->nullable();
+   $table->timestamps();
 });
