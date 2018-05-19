@@ -106,6 +106,17 @@ $departments = [
     'che' => 'Chemical Engineering'
 ];
 
+$courses = [
+    'csc101' => 'Introduction to Python Language',
+    'csc102' => 'Python Practical',
+    'csc201' => 'Introduction to Java Language',
+    'csc202' => 'Java Practical'
+];
+
+$class = [
+    'java', 'python'
+]
+
 foreach ($departments as $code => $dept){
 
     $name = new \App\Auto\Department();
