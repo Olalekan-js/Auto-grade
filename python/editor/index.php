@@ -265,7 +265,7 @@ The output to your program will come here (i.e the output section)
           minutes : "<?= $questions->duration_min ?>",
           seconds : "<?= $questions->duration_second ?>",
           size : 'lg',
-          expiryUrl: 'answer.php'
+          expiryUrl: "save.php"
       })
   </script>
   </body>

@@ -23,9 +23,6 @@ if (Input::exists('post')) {
         'question' => ['required' => true,],
         'course' => ['required' => true],
         'answer' => ['required' => true],
-        'duration_hour' => ['required'=>true],
-        'duration_min' => ['required'=>true],
-        'duration_second' => ['required'=>true],
         'q_type' => ['required'=> true]
     ]);
     if ($validator->passed()) {

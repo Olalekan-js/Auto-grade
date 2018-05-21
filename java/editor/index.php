@@ -266,22 +266,22 @@ The output to your program will come here (i.e the output section)
         <textarea id ="input" rows ='7' cols ='25'></textarea>
       </form>
     </section>
-  <script>
+ <!-- <script>
       $('#hms_timer').countdowntimer({
-          hours : "<?= $questions->duration_hour ?>",
-          minutes : "<?= $questions->duration_min ?>",
-          seconds : "<?= $questions->duration_second ?>",
+          hours : "<?/*= $questions->duration_hour */?>",
+          minutes : "<?/*= $questions->duration_min */?>",
+          seconds : "<?/*= $questions->duration_second */?>",
           size : 'lg',
-          expiryUrl: 'answer.php'
+          expiryUrl: "answer.php"
       })
-  </script>
+  </script>-->
   <script>
       $('#hms_timer').countdowntimer({
           hours : "<?= $questions->duration_hour ?>",
           minutes : "<?= $questions->duration_min ?>",
           seconds : "<?= $questions->duration_second ?>",
           size : 'lg',
-          expiryUrl: 'answer.php'
+          expiryUrl: "save.php"
       })
   </script>
   </body>
